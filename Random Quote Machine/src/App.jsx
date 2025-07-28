@@ -35,6 +35,9 @@ function App() {
   useEffect(() => {
     setRandomQuote(); // set initial quote
   },
+  // We skip adding setRandomQuote to dependencies on purpose.
+  // Running only once is enough here.
+  
   // eslint-disable-next-line react-hooks/exhaustive-deps
   []);
 
