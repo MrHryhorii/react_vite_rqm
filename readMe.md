@@ -20,6 +20,24 @@ which did not require Node.js components.
 - [Vite](https://vitejs.dev/)
 - JavaScript
 - CSS
+- React Hooks: **useState**, **useEffect**
+
+---
+
+## 🔧 How It Works
+
+This app displays random programming quotes with a button to generate a new one.  
+It also includes a Twitter share link for each quote.
+
+- **`useState`**  
+  Used to store the index of the currently displayed quote.  
+  Each time the "New Quote" button is pressed, the index is updated with a new random number,  
+  causing React to re-render the component with the new quote.
+
+- **`useEffect`**  
+  Used to set the initial quote when the app loads.  
+  The effect runs only once on mount (because of the empty dependency array `[]`),  
+  ensuring a random quote is shown without user interaction.
 
 ---
 
